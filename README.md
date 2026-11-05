@@ -122,3 +122,55 @@ adaptive-echo-cancellation/
 │
 ├── MATLAB/
 │   └── echo_setup.m
+│
+├── SIMULINK/
+│   └── AEC_model.slx
+│
+├── Results/
+│   ├── echo_verification.png
+│   ├── aec_simulink_outputs.png
+│   └── aec_signal_comparison.png
+│
+├── README.md
+└── .gitignore
+```
+
+## Results
+
+The initial MATLAB simulation successfully generates:
+- Far-end reference signal.
+- Simulated room echo.
+- Microphone signal containing echo, near-end speech and noise.
+
+The Simulink model also produces output waveforms for further analysis.
+
+**Note:** Quantitative echo cancellation performance and ERLE (Echo Return Loss Enhancement) will be documented after validating the adaptive filter and its output.
+
+## Future Improvements
+
+- Improve adaptive filter convergence.
+- Evaluate performance under different acoustic conditions.
+- Analyze echo cancellation during simultaneous near-end and far-end speech.
+- Implement real-time audio input and output.
+- Develop an interactive dashboard for monitoring signal behavior.
+- Evaluate echo reduction using ERLE.
+
+## Applications
+
+- Voice and video conferencing systems.
+- Hands-free mobile communication.
+- Speakerphone systems.
+- Internet-based voice communication (VoIP).
+- Audio communication devices.
+
+## Author
+
+**Mayur Kharvi**
+
+B.Tech – Electronics and Communication Engineering  
+Advanced Communication Technology  
+NMAM Institute of Technology
+
+---
+
+*Developed as an academic project to explore Digital Signal Processing and adaptive filtering using MATLAB and Simulink.*
